@@ -17,4 +17,8 @@ public String cadastrarAluno() {
 public String cadastrarLivro() {
 	return "/cadastrarLivro";
 	}
+@GetMapping("/login")
+public String autenticacao() {
+return "/paginaLogin";
+}
 }	
