@@ -14,6 +14,7 @@ plataforma de desenvolvimento web JEE Spring Boot.
 O processo de desenvolvimento segue uma adaptação do Scrum. Cada interação tem a duração de 4 aulas. Ao final da interação o
 código é avaliado pelo time junto com o professor na atividade de revisão da sprint. Em seguida a reunião de restrospectiva do sprint é
 realizada pelo grupo e uma ata é publicada no Teams.
+
 ![idef02](https://user-images.githubusercontent.com/14267502/84417700-6a2a2580-abec-11ea-8b39-d20213a4f15d.png)
 
 ### Backlog do produto
@@ -52,4 +53,6 @@ manutenções na interface de usuário com poucos efeitos colaterais. A arquitet
 arquitetura MVC.
 A estratégia de construção e integração do software será ascendente na hierarquia de controle, ou seja, da base de dados (backend) para
 a interface de interação homem máquina (frontend).
+### Modelo de Domínio
+![modelo de dominio](https://user-images.githubusercontent.com/14267502/84425324-bd55a580-abf7-11ea-99c7-f427b80fb7cc.png)
  
