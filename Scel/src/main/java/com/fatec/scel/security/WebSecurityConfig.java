@@ -37,3 +37,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			web.ignoring().antMatchers("/static/**", "/css/**", "/js/**", "/images/**", "/h2-console/**");
 	
 	}
+}

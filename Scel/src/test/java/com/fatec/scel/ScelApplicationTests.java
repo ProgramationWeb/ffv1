@@ -16,25 +16,27 @@ import com.fatec.scel.controller.HomeController;
 @RunWith(SpringRunner.class)
 @WebMvcTest(HomeController.class)
 class TesteHomeController {
-			@Autowired
-			private MockMvc mockMvc;
 
-			@Test
-			public void testHomePage() throws Exception {
-					mockMvc.perform(get("/"))
-					.andExpect(status().isOk())
-					.andExpect(view().name("/paginaMenu"));
-}
-@Test
-public void testCadastraraluno() throws Exception {
-			mockMvc.perform(get("/aluno/cadastrar"))
-			.andExpect(status().isOk())
-			.andExpect(view().name("/cadastrarAluno"));
-}
-@Test
-public void testCadastrarLivrio() throws Exception {
+	@Autowired
+	private MockMvc mockMvc;
+
+	@Test
+	public void testHomePage() throws Exception {
+		mockMvc.perform(get("/"))
+		.andExpect(status().isOk())
+		.andExpect(view().name("/paginaMenu"));	
+	}
+	@Test
+	public void testCadastraraluno() throws Exception {
+		mockMvc.perform(get("/aluno/cadastrar"))
+		.andExpect(status().isOk())
+		.andExpect(view().name("/cadastrarAluno"));
+		
+	}
+	@Test
+	public void testCadastrarLivrio() throws Exception {
 		mockMvc.perform(get("/livro/cadastrar"))
 		.andExpect(status().isOk())
 		.andExpect(view().name("/cadastrarLivro"));
-}
+	}
 }
